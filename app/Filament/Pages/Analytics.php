@@ -11,7 +11,6 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 use App\Filament\Widgets\ClientStatsOverview;
 use App\Filament\Widgets\RevenueByClientChart;
-use App\Filament\Widgets\InvoiceStatusChart;
 use App\Filament\Widgets\MonthlyRevenueChart;
 use Illuminate\Contracts\View\View;
 
@@ -86,7 +85,6 @@ class Analytics extends Page implements HasForms
         return [
             ClientStatsOverview::class,
             RevenueByClientChart::class,
-            InvoiceStatusChart::class,
             MonthlyRevenueChart::class,
         ];
     }

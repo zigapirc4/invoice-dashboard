@@ -7,14 +7,13 @@
         <div class="!w-auto !max-w-none h-full">
             @livewire(\App\Filament\Widgets\ClientStatsOverview::class)
         </div>
-        <div class="!w-auto !max-w-none h-full">
+    </div>
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+        <div style="width: 47%" >
             @livewire(\App\Filament\Widgets\RevenueByClientChart::class)
         </div>
-        <div class="!w-auto !max-w-none h-full">
-            @livewire(\App\Filament\Widgets\InvoiceStatusChart::class)
-        </div>
-        <div class="!w-auto !max-w-none h-full">
+        <div style="width: 47%" >
             @livewire(\App\Filament\Widgets\MonthlyRevenueChart::class)
         </div>
     </div>
-</x-filament-panels::page> 
+</x-filament-panels::page>
